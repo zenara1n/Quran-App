@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ZakatCalculator">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:id="@+id/backBtn"
+            android:layout_gravity="center_vertical"
+            android:rotation="180"
+            android:src="@drawable/back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Zakat Calculator"
+            android:gravity="center"
+            android:id="@+id/txtSetting"
+            android:fontFamily="@font/ralewaymedium"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical|end"
+            android:onClick="ZakatInfo"
+            android:src="@drawable/information"
+            app:tint="@color/white" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ralewayregular"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/zakatcalcul"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ralewaysemibold"
+                    android:gravity="start"
+                    android:text="@string/totalprice"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/inputtotalprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/localprice"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="7dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ralewaysemibold"
+                    android:gravity="start"
+                    android:text="@string/goldprice"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/inputgoldprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/localprice"
+                    android:inputType="number"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:padding="7dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/underlinelink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ralewayregular"
+                android:gravity="center"
+                android:onClick="LocalPriceGold"
+                android:text="@string/localgoldprice"
+                android:visibility="gone"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btn_bg_signin_solid"
+                    android:fontFamily="@font/ralewaysemibold"
+                    android:onClick="CalculateZakat"
+                    android:text="@string/calculate"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/zakatresult1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ralewaysemibold"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/zakatresult2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ralewayregular"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    ads:adSize="BANNER"
+                    android:translationZ="3dp"
+                    ads:adUnitId="@string/banner_adunit_id" />
+
+            </LinearLayout>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

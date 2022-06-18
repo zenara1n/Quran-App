@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003d35</color>
+    <color name="colorPrimaryDark">#003d35</color>
+    <color name="colorAccent">#FFC85A</color>
+    <color name="colortrans">#003d35</color>
+    <color name="black">#FFC85A</color>
+    <color name="dullblack">#79FFC85A</color>
+    <color name="white">#FFC85A</color>
+    <color name="bgcolor">#003d35</color>
+    <color name="blackdull">#FFC85A</color>
+    <color name="colorLocation">#FFC85A</color>
+    <color name="colorDate">#FFC85A</color>
+    <color name="colorPrayerTime">#FFC85A</color>
+    <color name="md_white_1000">#FFC85A</color>
+    <color name="md_red_400">#EF5350</color>
+    <color name="watermelon">#e64a3c</color>
+    <color name="background">#F6F7F9</color>
+
+    <color name="mushaf2">#eeeade</color>
+    <color name="mushaf3">#ede6d3</color>
+    <color name="mushaf4">#ddcca2</color>
+    <color name="mushaf5">#dcd69c</color>
+
+    <color name="blue_1">#e1e3f0</color>
+    <color name="blue_2">#bec2dd</color>
+    <color name="blue_3">#AEB2D1</color>
+    <color name="blue_4">#6D7DDB</color>
+    <color name="blue_5">#5D6ECF</color>
+    <color name="blue_6">#4556B6</color>
+    <color name="blue_7">#4556B6</color>
+
+    <!-- indigo -->
+    <color name="md_indigo_50">#E8EAF6</color>
+    <color name="md_indigo_100">#C5CAE9</color>
+    <color name="md_indigo_200">#9FA8DA</color>
+    <color name="md_indigo_300">#7986CB</color>
+    <color name="md_indigo_400x">#4559c4</color>
+    <color name="md_indigo_500x">#3C4DB1</color>
+    <color name="md_indigo_800">#283593</color>
+    <color name="md_indigo_800x">#27348D</color>
+
+    <!-- green -->
+    <color name="md_green_50">#E8F5E9</color>
+    <color name="md_green_100">#C8E6C9</color>
+    <color name="md_green_200">#A5D6A7</color>
+    <color name="md_green_300">#81C784</color>
+    <color name="md_green_400">#66BB6A</color>
+    <color name="md_green_600">#43A047</color>
+    <color name="md_green_600x">#45A549</color>
+    <color name="md_green_700">#388E3C</color>
+    <color name="md_green_700x">#3D9740</color>
+    <color name="md_green_800">#2E7D32</color>
+
+
+    <color name="green_md">@color/blue_1</color>
+
+
+
+<!--    OLD COLORS   -->
+
+
+<!--    <color name="colorPrimary">#5A98CA</color>-->
+<!--    <color name="colorPrimaryDark">#466A87</color>-->
+<!--    <color name="colorAccent">#5D92BD</color>-->
+<!--    <color name="colortrans">#BE5D92BD</color>-->
+<!--    <color name="black">#000000</color>-->
+<!--    <color name="dullblack">#2E2E2E</color>-->
+<!--    <color name="white">#ffffff</color>-->
+<!--    <color name="bgcolor">#51466A87</color>-->
+<!--    <color name="blackdull">#191919</color>-->
+<!--    <color name="colorLocation">#b71513</color>-->
+<!--    <color name="colorDate">#b71513</color>-->
+<!--    <color name="colorPrayerTime">#795548</color>-->
+<!--    <color name="md_white_1000">#ffffff</color>-->
+<!--    <color name="md_red_400">#EF5350</color>-->
+<!--    <color name="watermelon">#e64a3c</color>-->
+<!--    <color name="background">#F6F7F9</color>-->
+
+<!--    <color name="mushaf2">#eeeade</color>-->
+<!--    <color name="mushaf3">#ede6d3</color>-->
+<!--    <color name="mushaf4">#ddcca2</color>-->
+<!--    <color name="mushaf5">#dcd69c</color>-->
+
+<!--    <color name="blue_1">#e1e3f0</color>-->
+<!--    <color name="blue_2">#bec2dd</color>-->
+<!--    <color name="blue_3">#AEB2D1</color>-->
+<!--    <color name="blue_4">#6D7DDB</color>-->
+<!--    <color name="blue_5">#5D6ECF</color>-->
+<!--    <color name="blue_6">#4556B6</color>-->
+<!--    <color name="blue_7">#4556B6</color>-->
+
+<!--    &lt;!&ndash; indigo &ndash;&gt;-->
+<!--    <color name="md_indigo_50">#E8EAF6</color>-->
+<!--    <color name="md_indigo_100">#C5CAE9</color>-->
+<!--    <color name="md_indigo_200">#9FA8DA</color>-->
+<!--    <color name="md_indigo_300">#7986CB</color>-->
+<!--    <color name="md_indigo_400x">#4559c4</color>-->
+<!--    <color name="md_indigo_500x">#3C4DB1</color>-->
+<!--    <color name="md_indigo_800">#283593</color>-->
+<!--    <color name="md_indigo_800x">#27348D</color>-->
+
+<!--    &lt;!&ndash; green &ndash;&gt;-->
+<!--    <color name="md_green_50">#E8F5E9</color>-->
+<!--    <color name="md_green_100">#C8E6C9</color>-->
+<!--    <color name="md_green_200">#A5D6A7</color>-->
+<!--    <color name="md_green_300">#81C784</color>-->
+<!--    <color name="md_green_400">#66BB6A</color>-->
+<!--    <color name="md_green_600">#43A047</color>-->
+<!--    <color name="md_green_600x">#45A549</color>-->
+<!--    <color name="md_green_700">#388E3C</color>-->
+<!--    <color name="md_green_700x">#3D9740</color>-->
+<!--    <color name="md_green_800">#2E7D32</color>-->
+</resources>

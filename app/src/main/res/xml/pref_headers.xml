@@ -1,0 +1,23 @@
+<!--suppress ALL -->
+<preference-headers xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="aiou.muslim.mttech.Activities.SettingsActivity$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general"
+        android:icon="@drawable/ic_info_black_24dp"
+        tools:ignore="MissingClass" />
+
+    <header
+        android:fragment="aiou.muslim.mttech.Activities.SettingsActivity$LocationsPreferenceFragment"
+        android:title="@string/pref_header_locations"
+        android:icon="@drawable/ic_locations_black_24dp" />
+
+    <header
+        android:fragment="aiou.muslim.mttech.Activities.SettingsActivity$NotificationPreferenceFragment"
+        android:title="@string/pref_header_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp" />
+
+</preference-headers>

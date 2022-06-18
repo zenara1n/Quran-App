@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="aiou.muslim.mttech">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <application
+        android:name=".Helper.NotifsChannels"
+        android:allowBackup="true"
+        android:hardwareAccelerated="@bool/useHardwareAcceleration"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:exported="true"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob__app_id" />
+
+        <activity
+            android:name=".Activities.AllahNames"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.WeatherWidget"
+            android:theme="@style/AppTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <activity
+            android:name=".Masjid"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SixKalmasActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.CounterActivity"
+            android:theme="@style/AppTheme" />
+
+        <receiver
+            android:name=".Receiver.Restarter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Receiver.YourService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Activities.TestActivity"
+            android:theme="@style/AppTheme">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Activities.ChooseCity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:theme="@style/AppThemeThree" />
+        <activity
+            android:name=".Activities.ZakatCalculator"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.GoldPriceActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.PrayerTimes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.SampleActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".fragment.SampleFragmentActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".service.SampleServiceActivity"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".service.SampleService" /> <!-- <receiver android:name=".Helper.AlarmReceiverTwo" /> -->
+        <activity
+            android:name=".Activities.CompassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTwo" />
+        <activity
+            android:name=".Helper.NotifyActivityHandlerStop"
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.QuranMain"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Mushaf">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Activities.AyahWordActivity"
+            android:parentActivityName=".Activities.QuranMain"
+            android:theme="@style/AppTheme.Mushaf">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aiou.muslim.mttech.Activities.QuranMain" />
+        </activity>
+        <activity
+            android:name=".Activities.TafsirActivity"
+            android:parentActivityName=".Activities.AyahWordActivity"
+            android:theme="@style/AppTheme.Mushaf">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aiou.muslim.mttech.Activities.AyahWordActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.HijriGregorianConv"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Activities.AzkarCategoriesActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Activities.AboutUs"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

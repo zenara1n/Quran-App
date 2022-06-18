@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.CounterActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:orientation="vertical"
+        tools:context=".Activities.CounterActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:rotation="180"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txtSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:gravity="center"
+                android:text="6 Kalmas"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgcolor"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="First Kalima"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0.6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColorHint="@color/black"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="The Word of Purity (Tayyabah)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@color/black"
+                        android:layout_height="0.6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/simple"
+                            android:id="@+id/kalmaone"
+                            android:text="لآ اِلَهَ اِلّا اللّهُ مُحَمَّدٌ رَسُوُل اللّهِ"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+                        
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Translation:  "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="(There is no God but Allah Muhammad is the Messenger of Allah)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnCopy1"
+                            android:tint="@color/black"
+                            android:src="@drawable/copy"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnShare1"
+                            android:tint="@color/black"
+                            android:src="@drawable/share"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="8dp"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Second Kalima"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0.6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:textSize="12sp"
+                            android:text="The word of Testimony (Shahaadat)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="0.6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/simple"
+                            android:gravity="center"
+                            android:id="@+id/kalmatwo"
+                            android:text="اشْهَدُ انْ لّآ اِلهَ اِلَّا اللّهُ وَحْدَه لَا شَرِيْكَ لَه، وَ اَشْهَدُ اَنَّ مُحَمَّدً اعَبْدُهوَرَسُولُهِ"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Translation:  "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="(I bear witness that no-one is worthy of worship but Allah, the One alone, without partner, and I bear witness that Muhammad is His servant and Messenger)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnCopy2"
+                            android:tint="@color/black"
+                            android:src="@drawable/copy"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnShare2"
+                            android:tint="@color/black"
+                            android:src="@drawable/share"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="8dp"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Third Kalima"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0.6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="The word of Glorification (Tumjeed)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="0.6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/simple"
+                            android:gravity="center"
+                            android:id="@+id/kalmathree"
+                            android:text="سُبْحَان الِلّه وَ الْحَمْدُ   لِلّهِ وَ لآ اِلهَ اِلّا اللّهُ، وَ اللّهُ اَكْبَرُ وَلا حَوْلَ وَلاَ قُوَّةَ  اِلَّا بِاللّهِ الْعَلِىّ الْعَظِيْمِ"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Translation:  "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="(Glory be to Allah and Praise to Allah, and there is no God But Allah, and Allah is the Greatest. And there is no Might or Power except with Allah.)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnCopy3"
+                            android:tint="@color/black"
+                            android:src="@drawable/copy"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnShare3"
+                            android:tint="@color/black"
+                            android:src="@drawable/share"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="8dp"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Forth Kalima"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0.6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="The word of Unity (Tauhid)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@color/black"
+                        android:layout_height="0.6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/simple"
+                            android:gravity="center"
+                            android:id="@+id/kalmafour"
+                            android:text="لا الهَ اِلَّا اللّهُ وَحْدَهُ لا شَرِيْكَ لَهْ، لَهُ الْمُلْكُ وَ لَهُ الْحَمْدُ يُحْى وَ يُمِيْتُ وَ هُوَحَىُّ لَّا يَمُوْتُ اَبَدًا اَبَدًا ط ذُو الْجَلَالِ وَ الْاِكْرَامِ ط بِيَدِهِ الْخَيْرُ ط وَهُوَ عَلى كُلِّ شَئ ٍ قَدِيْرٌ طِ"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Translation:  "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="(There is) none worthy of worship except Allah. He is only One. (There is) no partners for Him. For Him (is) the Kingdom. And for Him (is) the Praise. He gives life and acuses death. And He (is) Alive. He will not die, never, ever. Possessor of Majesty and Reverence. In His hand (is) the goodness. And He (is) the goodness. And He (is) on everything powerful.)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnCopy4"
+                            android:tint="@color/black"
+                            android:src="@drawable/copy"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnShare4"
+                            android:tint="@color/black"
+                            android:src="@drawable/share"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="8dp"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Fifth Kalima"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0.6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="The word of Penitence (Astaghfar)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@color/black"
+                        android:layout_height="0.6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/simple"
+                            android:id="@+id/kalmafive"
+                            android:gravity="center"
+                            android:text="اسْتَغْفِرُ اللّهَ رَبِّىْ مِنْ كُلِّ ذَنْبٍ اَذْنَبْتُه عَمَدًا اَوْ خَطَاً سِرًّا اَوْ عَلَانِيَةً وَاَتُوْبُ اِلَيْهِ مِنْ الذَّنْبِ الَّذِىْ اَعْلَمُ وَ مِنْ الذَّنْبِ الَّذِىْ لا اَعْلَمُ اِنَّكَ اَنْتَ عَلَّامُ الغُيُوْبِ وَ سَتَّارُ الْعُيُوْبِ و َغَفَّارُ الذُّنُوْبِ وَ لا حَوْلَ وَلا قُوَّةَ اِلَّا بِاللّهِ الْعَلِىِّ العَظِيْمِ"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Translation:  "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="(I seek forgiveness from Allah, my Lord, from every sin I committed knowingly or unknowingly, secretly or openly, and I turn towards Him from the sin that I know and from the sin that I do not know. Certainly You, You (are) the knower of the hidden things and the Concealer (of) the mistakes and the Forgiver (of) the sins. And (there is) no power and no strength except from Allah, the Most High, the Most Great)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnCopy5"
+                            android:tint="@color/black"
+                            android:src="@drawable/copy"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnShare5"
+                            android:tint="@color/black"
+                            android:src="@drawable/share"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="8dp"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Sixth Kalima"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0.6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="The words of rejecting disbelief (Rud-A-Kuffer)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@color/black"
+                        android:layout_height="0.6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/simple"
+                            android:id="@+id/kalmasix"
+                            android:gravity="center"
+                            android:text="ٱللَّٰهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ أَنْ أُشْرِكَ بِكَ شَيْءً وَأَنَا أَعْلَمُ بِهِ وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُ بِهِ تُبْتُ عَنْهُ وَتَبَرَّأَتُ مِنَ ٱلْكُفْرِ وَٱلشِّرْكِ وَٱلْكِذْبِ وَٱلْغِيبَةِ وَٱلْبِدْعَةِ وَٱلنَّمِيمَةِ وَٱلْفَوَاحِشِ وَٱلْبُهْتَانِ وَٱلْمَعَاصِي كُلِّهَا وَأَسْلَمْتُ وَأَقُولُ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِِ"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaysemibold"
+                            android:text="Translation:  "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="(O Allah! Certainly I seek protection with You from, that I associate partner with You anything and I know it. And I seek forgiveness from You for that I do not know it. I repended from it and I made myself free from disbelief and polytheism and the falsehood and the back-biting and the innovation and the tell-tales and the bad deeds and the blame and the disobedience, all of them. And I submit and I say (there is) none worthy of worship except Allah, Muhammad is the Messenger of Allah.)"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnCopy6"
+                            android:tint="@color/black"
+                            android:src="@drawable/copy"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/btnShare6"
+                            android:tint="@color/black"
+                            android:src="@drawable/share"
+                            tools:ignore="UseAppTint" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

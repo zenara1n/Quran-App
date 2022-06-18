@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".Activities.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/weatherbgcard"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:id="@+id/backBtn"
+            android:layout_gravity="center_vertical"
+            android:rotation="180"
+            android:src="@drawable/back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Settings"
+            android:gravity="center"
+            android:id="@+id/txtSetting"
+            android:fontFamily="@font/ralewaymedium"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/black"
+            android:text="Set Location:"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/ralewaymedium"
+            android:paddingLeft="35dp"
+            android:paddingStart="35dp"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnCurrent"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_signin_stroke"
+                tools:ignore="DuplicateIds">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCurrent"
+                    android:text="Update Location"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/ralewaysemibold"
+                    tools:ignore="DuplicateIds" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btnCity"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_signin_stroke">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select City"
+                    android:id="@+id/citySpinner"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/ralewaysemibold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/locationLayout">
+
+        <TextView
+            android:id="@+id/act_profile_et_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ralewaymedium"
+            android:text="Location Details:"
+            android:paddingLeft="35dp"
+            android:paddingStart="35dp"
+            android:paddingTop="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/languagesGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:inputType="textPostalAddress"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            android:paddingStart="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country:"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtCountry"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Pakistan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City:"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtCity"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Rawalpindi"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtLocation"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="33.6, 73.9"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/black"
+            android:text="Prayer Time Method:"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/ralewaymedium"
+            android:paddingLeft="35dp"
+            android:paddingStart="35dp"
+            android:paddingTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnMethod"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_signin_stroke">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMethod"
+                    android:text="Egyptian General Authority of Survey"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:text="Counter Sound:"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/ralewaymedium"
+            android:paddingEnd="35dp"
+            android:paddingStart="35dp"
+            android:paddingTop="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="40dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_signin_stroke_square">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtCounterOn"
+                    android:text="ON"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_signin_stroke_square">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtCounterOff"
+                    android:text="OFF"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/black"
+            android:text="Alarm Settings"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/ralewaymedium"
+            android:paddingLeft="35dp"
+            android:paddingStart="35dp"
+            android:paddingTop="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnCurrent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                tools:ignore="DuplicateIds">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCurrent"
+                    android:text="Fajr"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"
+                    tools:ignore="DuplicateIds" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtFajrOn"
+                            android:text="ON"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtFajrOff"
+                            android:text="OFF"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCurrent"
+                    android:text="Zohr"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"
+                    tools:ignore="DuplicateIds" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtZohrOn"
+                            android:text="ON"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtZohrOff"
+                            android:text="OFF"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCurrent"
+                    android:text="Asar"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"
+                    tools:ignore="DuplicateIds" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtAsarOn"
+                            android:text="ON"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtAsarOff"
+                            android:text="OFF"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCurrent"
+                    android:text="Maghrib"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"
+                    tools:ignore="DuplicateIds" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtMaghribOn"
+                            android:text="ON"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtMaghribOff"
+                            android:text="OFF"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCurrent"
+                    android:text="Isha"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ralewaysemibold"
+                    tools:ignore="DuplicateIds" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtIshaOn"
+                            android:text="ON"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg_signin_stroke_square">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtIshaOff"
+                            android:text="OFF"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/ralewaysemibold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</LinearLayout>

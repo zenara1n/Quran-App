@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <TextView
+            android:id="@+id/txt_acceleration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/acceleration"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/txt_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginEnd="47dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/orientation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <aiou.muslim.mttech.widget.AccelerometerView
+            android:id="@+id/accelerometer_view"
+            android:layout_width="@dimen/accelerometer_view_size"
+            android:layout_height="@dimen/accelerometer_view_size"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/spacing_double"
+            android:layout_marginEnd="@dimen/spacing_double" />
+
+        <aiou.muslim.mttech.widget.AccelerometerView
+            android:id="@+id/accelerometer_view2"
+            android:layout_width="@dimen/accelerometer_view_size"
+            android:layout_height="@dimen/accelerometer_view_size"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/spacing_double"
+            android:layout_marginTop="@dimen/spacing_double" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <aiou.muslim.mttech.widget.AccuracyView
+            android:id="@+id/accuracy_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <aiou.muslim.mttech.widget.MagneticFieldView
+            android:id="@+id/magnetic_field_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <aiou.muslim.mttech.widget.CompassCompoundView
+            android:id="@+id/compass_view_compound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_accuracy_calibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="@dimen/spacing_double"
+            android:layout_marginEnd="@dimen/spacing_double"
+            android:drawableTop="@drawable/all_inclusive"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/need_calibration"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_accuracy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_medium"
+                    tools:text="Accuracy: high" />
+
+                <TextView
+                    android:id="@+id/txt_magnetic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_medium"
+                    tools:text="Magnetic field: 49mT" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

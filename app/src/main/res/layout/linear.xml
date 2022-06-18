@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:id="@+id/backBtn"
+            android:layout_gravity="center_vertical"
+            android:rotation="180"
+            android:src="@drawable/back"
+            android:tint="@color/black"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Dates Conversion"
+            android:gravity="center"
+            android:id="@+id/txtSetting"
+            android:fontFamily="@font/ralewaymedium"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/pickDateBtn"
+        android:fontFamily="@font/ralewaysemibold"
+        android:gravity="center"
+        android:text="Pick Date"
+        android:background="@drawable/btn_bg_signin_solid"
+        android:textColor="@color/white">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/ralewaysemibold"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/white"></TextView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/ralewaysemibold"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/white"></TextView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/ralewaysemibold"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/white"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/inday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/ralewaymedium"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"></TextView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/inmonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/ralewaymedium"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"></TextView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/inyear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/ralewaymedium"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <!-- row 3 mode choose radio buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_signin_stroke_square"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtHijri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_bg_signin_solid_square"
+                android:fontFamily="@font/ralewaysemibold"
+                android:gravity="center"
+                android:text="@string/tohijri"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_signin_stroke_square"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtGregorian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ralewaysemibold"
+                android:gravity="center"
+                android:text="@string/togregorian"
+                android:textColor="@color/dullblack"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/tohijri"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/tohijri"
+            android:textColor="@color/colorPrimaryDark"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/togregorian"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/togregorian"
+            android:textColor="@color/colorPrimaryDark"></RadioButton>
+    </RadioGroup>
+    <!-- row 4: day of week result view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4px"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:gravity="center"
+            android:text="@string/dayw"
+            android:textColor="@color/black"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/outday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4px"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="@color/black"></TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <!-- row 5: day result view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4px"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/black"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/outdayw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4px"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="@color/black"></TextView>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <!-- row 6: month result view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4px"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:text="@string/month"
+            android:textColor="@color/black"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/outmonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4px"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="@color/black"></TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <!-- row 7: Year result view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4px"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/black"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/outyear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4px"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"></TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <!-- row 8: show note message -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4px"
+        android:gravity="center"
+        android:text="@string/note"
+        android:textColor="@color/dullblack"
+        android:textSize="28px"></TextView>
+    <!-- row 9: reset and convert button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:onClick="clear"
+            android:background="@drawable/btn_bg_signin_solid_square"
+            android:fontFamily="@font/ralewaysemibold"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:textSize="28px"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="today"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bg_signin_solid_square"
+            android:fontFamily="@font/ralewaysemibold"
+            android:text="@string/restore"
+            android:textColor="@color/white"
+            android:textSize="28px"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_signin_solid_square"
+            android:fontFamily="@font/ralewaysemibold"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:onClick="convert"
+            android:text="@string/convert"
+            android:textColor="@color/white"
+            android:textSize="28px"></Button>
+    </LinearLayout>
+</LinearLayout>

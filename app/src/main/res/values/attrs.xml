@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<attr name="outerCircleColor" format="color" />
+	<attr name="middleCircleColor" format="color" />
+	<attr name="innerCircleColor" format="color" />
+
+	<attr name="indicatorBackgroundColor" format="color" />
+	<attr name="indicatorTextColor" format="color" />
+	<attr name="indicatorFieldColor" format="color" />
+
+	<attr name="smallMarkColor" format="color" />
+	<attr name="bigMarkColor" format="color" />
+	<attr name="primaryTextColor" format="color" />
+	<attr name="compassTextColor" format="color" />
+	<attr name="secondaryTextColor" format="color" />
+	<attr name="northMarkColor" format="color" />
+
+	<attr name="accelerometerGridColor" format="color" />
+	<attr name="accelerometerBallColor" format="color" />
+
+	<declare-styleable name="CompassBackgroundView">
+		<attr name="outerCircle" format="color" />
+		<attr name="middleCircle" format="color" />
+		<attr name="innerCircle" format="color" />
+		<attr name="northMarkArrow" format="color" />
+	</declare-styleable>
+
+	<declare-styleable name="CompassClockFaceView">
+		<attr name="smallMark" format="color" />
+		<attr name="bigMark" format="color" />
+		<attr name="northMark" format="color" />
+		<attr name="primaryText" format="color" />
+		<attr name="secondaryText" format="color" />
+	</declare-styleable>
+
+	<attr name="pagerTitleStripTextColor" format="reference|color" />
+	<attr name="pagerTitleStripBackground" format="reference|color" />
+
+	<declare-styleable name="FlowLayout">
+		<attr name="horizontalSpacing" format="dimension" />
+		<attr name="verticalSpacing" format="dimension" />
+		<attr name="orientation" format="enum">
+			<enum name="horizontal" value="0" />
+			<enum name="vertical" value="1" />
+		</attr>
+		<attr name="rtl" format="boolean" />
+	</declare-styleable>
+
+	<declare-styleable name="FlowLayout_LayoutParams">
+		<attr name="layout_newLine" format="boolean" />
+		<attr name="layout_horizontalSpacing" format="dimension" />
+		<attr name="layout_verticalSpacing" format="dimension" />
+	</declare-styleable>
+
+</resources>
